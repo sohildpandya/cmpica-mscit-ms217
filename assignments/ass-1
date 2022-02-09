@@ -1,0 +1,511 @@
+Test the output of the following code(s):
+--------------------------------------------
+
+1.		
+<?php
+
+  $var1 = 'nameOfVariable';
+
+  $nameOfVariable = 'This is the value I want!';
+
+  echo $$var1; 
+
+?>
+
+--------------------------------------------
+2.		
+<?php
+
+  $var1 = 'var2';
+  $var2 = 'nameOfVariable';
+
+  $nameOfVariable = 'The value I want!';
+
+  echo $$$var1;
+
+?>
+--------------------------------------------
+3.		
+<?php
+
+  $var1 = 'nameOf';
+  $var2 = 'TheVariable';
+
+  $nameOfTheVariable = 'Another value I want!';
+
+  echo ${$var1 . $var2}; // Use concatenation to generate the variable name and then access it //
+
+?>
+--------------------------------------------
+4.		
+
+<?php 
+echo "deve"."lop";          //displays "develop" 
+echo "<br /><br />";            // html line breaks 
+
+echo "deve" . "lop";        //displays "develop" 
+echo "<br /><br />";            // html line breaks 
+
+echo 4 . 3;                     //displays "43" 
+echo "<br /><br />";            // html line breaks 
+
+echo 4.3;                       //displays "4.3" 
+echo "<br /><br />";            // html line breaks 
+
+echo "4" . "3";                //displays "43" 
+echo "<br /><br />";            // html line breaks 
+
+echo '4' . '3';                  //displays "43" 
+?>
+--------------------------------------------
+5.		
+<?php 
+
+$flavor_choice = "chocolate"; 
+$output = ($flavor_choice == "vanilla") ? "Yes, we have vanilla." : "Sorry we do not have $flavor_choice.";
+
+echo "$output"; 
+?>
+--------------------------------------------
+6.		
+<?php
+    $useragent = $_SERVER ['HTTP_USER_AGENT'];
+    echo "<b>Your User Agent is</b>: " . $useragent; 
+?>
+--------------------------------------------
+7.		
+<?php
+$welcome_text = "Hello and welcome to my website.";
+print($welcome_text);
+?>
+--------------------------------------------
+8.		
+<?php
+$x=5; // global scope
+  
+function myTest()
+{
+$y=10; // local scope
+echo "<p>Test variables inside the function:<p>";
+echo "Variable x is: $x";
+echo "<br>";
+echo "Variable y is: $y";
+} 
+
+myTest();
+
+echo "<p>Test variables outside the function:<p>";
+echo "Variable x is: $x";
+echo "<br>";
+echo "Variable y is: $y";
+?>
+--------------------------------------------
+9.		
+<?php 
+$x = 10.365;
+var_dump($x);
+echo "<br>"; 
+$x = 2.4e3;
+var_dump($x);
+echo "<br>"; 
+$x = 8E-5;
+var_dump($x);
+?>   
+--------------------------------------------
+10.		
+<?php
+$x=100; 
+$y="100";
+
+var_dump($x == $y);
+echo "<br>";
+var_dump($x === $y);
+echo "<br>";
+var_dump($x != $y);
+echo "<br>";
+var_dump($x !== $y);
+echo "<br>";
+
+$a=50;
+$b=90;
+
+var_dump($a > $b);
+echo "<br>";
+var_dump($a < $b);
+?>
+--------------------------------------------
+11.		
+<?php
+
+$times = 5;
+$x = 0;
+while ($x < $times) {
+echo "Hello World";
+++$x;
+} 
+?>
+--------------------------------------------
+12.		
+<?php
+$number = 1000;
+$current = 0;
+while ($current < $number) {
+++$current;
+echo "$current<br>";
+}
+?>
+--------------------------------------------
+13.		
+<?php 
+// set the variable and its value 
+$myVar = "Jac Carnell"; 
+// Run simple if and else statement to see if it is a string or not 
+if (is_string($myVar)) { 
+echo "Yes"; 
+} else { 
+echo "No"; 
+} 
+?>
+--------------------------------------------
+14.		
+<?php 
+$myVar = 3; 
+$myVar++; 
+echo $myVar; 
+?>
+--------------------------------------------
+15.		
+<?php 
+
+$var1 = 43; 
+$var2 = 56; 
+
+if (($var1 == 43) && ($var2 == 56)) { 
+    echo "Yes, the values produce the match we want."; 
+} else { 
+    echo "No, the values do not match yet."; 
+} 
+?>
+--------------------------------------------
+16.		
+<?php 
+
+// define(constant_name, value, case_sensitive=true); 
+define("AUTHOR_NAME", "BalaGuruswami", true); 
+
+echo "The person that created this web page is named " . AUTHOR_NAME . "."; 
+
+?>
+--------------------------------------------
+17.		
+<html>
+  	<head>
+  		<title>Break Statement</title>
+  	</head>
+  	<body>
+  	<?php
+   		$i = 0;
+   		while ( $i < 6 )
+   		{
+     			if( $i == 3) break;
+     			$i++;
+   		}
+   		echo("Loop stopped at $i by break statement");
+ 	?>
+ 	</body>
+ </html>
+--------------------------------------------
+18.		
+<html>
+      <head>
+            <title>Using the break Statement</title>
+     </head>
+     <body>
+     <?php
+          $counter = -4;
+          for ( ; $counter <= 10; $counter++ ) 
+          {
+                 if($counter == 0) 
+                 {
+                      break;
+                 }
+                 $temp = 4000/$counter;
+                 print "4000 divided by $counter is.. $temp<br />";
+          }
+     ?>
+     </body>
+    </html>
+--------------------------------------------
+19.		
+<html>
+<head><title>Using the break Statement</title></head>
+<body>
+<div>
+<?php
+    $counter = -4;
+    for ( ; $counter <= 10; $counter++ ) {
+      if ( $counter == 0 ) {
+        break;
+      }
+      $temp = 4000/$counter;
+      print "4000 divided by $counter is.. $temp<br />";
+    }
+?>
+</div>
+</body>
+</html>
+--------------------------------------------
+20.		
+<?php
+    $nIndex = 2;
+    switch ( $nIndex )
+    {
+        default:
+            print( "neither zero, one nor two<br>" );
+            break;
+        case 0:
+            print( "zero<br>" );
+            break;
+        case 1:
+            print( "one<br>" );
+            break;
+        case 2:
+            print( "two<br>" );
+            break;
+    }
+?>
+--------------------------------------------
+21.		
+<?php
+  $choice = "Rock";
+  switch ($choice){
+     case "Pop":
+         print "Pop not Rock";
+         break;
+     case "Rap":
+         print "Rap and not Rock";
+         break;
+     case "Jazz":
+         print "Jazz not Rock";
+         break;
+     case "Rock":
+         print "Rock music";
+         break;
+  }
+  ?>
+--------------------------------------------
+22.		
+<?php
+define('ALIGN_LEFT', 1);
+define('ALIGN_CENTER', 2);
+define('ALIGN_RIGHT', 3);
+$value = ALIGN_RIGHT;
+switch($value) {
+  case ALIGN_LEFT :
+    break;
+  case ALIGN_CENTER :
+    break;
+  case ALIGN_RIGHT :
+    break;
+}
+?>
+--------------------------------------------
+23.		
+<?
+$action= 'ADD';
+switch ($action):
+    case "ADD":
+       echo "Perform actions for adding.";
+       break;
+    case "MODIFY":
+       echo "Perform actions for modifying.";
+       break;
+    case "DELETE":
+       echo "Perform actions for deleting.";
+       break;
+    default:
+       echo "Error: Action must be either ADD, MODIFY, or DELETE.";
+endswitch;
+?>
+--------------------------------------------
+24.		
+<?php
+$action = "ORDER";
+switch ($action) {
+    case "ORDER":
+        echo "order assembly.<br />";
+    case "PACKAGE":
+        echo "packing.<br />";
+    case "SHIP":
+        echo "shipping.<br />";
+    }
+?>
+--------------------------------------------
+25.		
+<?php
+     while(1) {
+                    print "In loop!\n";
+     }
+?>
+while loop ends here
+<?php
+     for (;;) {
+          print "In loop!\n";
+     }
+?>
+--------------------------------------------
+26.		
+<html>
+<head>
+<title>Defining a constant</title>
+</head>
+<body>
+<?php
+define("USER", "Joe");
+print "Welcome ".USER;
+?>
+</body>
+</html>
+--------------------------------------------
+27.		
+<?="This is another PHP example.";?>
+--------------------------------------------
+28.		
+<?php
+$a = "abc";
+$b = "def";
+
+switch($c){
+    case "a":
+        echo "a";
+        break;
+    case "b":
+        echo "b";
+        break;
+    default:
+        echo "default";
+        break;
+}
+?>
+--------------------------------------------
+29.		<?php
+
+switch ($totaltime) {
+
+case ($totaltime < 1):
+echo "That was fast!";
+break;
+
+case ($totaltime > 1):
+echo "Not fast!";
+break;
+
+case ($totaltime > 10):
+echo "That's slooooow";
+break;
+}
+
+?>
+--------------------------------------------
+30.		<?php
+if ($a == 5):
+    echo "a equals 5";
+    echo "...";
+elseif ($a == 6):
+    echo "a equals 6"; ?>
+    echo "!!!";
+else:
+    echo "a is neither 5 nor 6";
+endif;
+?> 
+--------------------------------------------
+31.		
+<?php
+if ($a == 12):
+  echo "a is 12\n";
+end if;
+
+while (true):
+  echo "loop loop loop\n";
+end while;
+?>
+--------------------------------------------
+32.		
+<?php switch($variable): ?>
+<?php case 1: ?>
+Newspage
+<?php break;?>
+<?php case 2: ?>
+Forum
+<?php break;?>
+<?php endswitch;?>
+Instead you have to workaround like this:
+<?php switch($variable): 
+case 1: ?>
+Newspage
+<?php break;?>
+<?php case 2: ?>
+Forum
+<?php break;?>
+<?php endswitch;?>
+--------------------------------------------
+33.		
+<?php
+if ($a > $b) {
+    echo "a is bigger than b";
+} elseif ($a == $b) {
+    echo "a is equal to b";
+} else {
+    echo "a is smaller than b";
+}
+?> 
+--------------------------------------------
+34.		
+<?php
+if($a > $b):
+    echo $a." is greater than ".$b;
+elseif($a == $b): 
+    echo $a." equals ".$b;
+else:
+    echo $a." is neither greater than or equal to ".$b;
+endif;
+?> 
+
+35.		<?php
+for($i=0,$j=50; $i<100; $i++) {
+  while($j--) {
+    if($j==17) goto end; 
+  }  
+}
+echo "i = $i";
+end:
+echo 'j hit 17';
+?> 
+--------------------------------------------
+36.		
+<?php
+goto loop;
+for($i=0,$j=50; $i<100; $i++) {
+  while($j--) {
+    loop:
+  }
+}
+echo "$i = $i";
+?> 
+--------------------------------------------
+37.		
+<?php
+$array = array(
+         "a",
+         "b",
+    6 => "c",
+         "d",
+);
+var_dump($array);
+?>
+--------------------------------------------
+38.		
+<?php
+$a=array(3=>"red",4=>"green");
+print_r(array_merge($a));
+?>

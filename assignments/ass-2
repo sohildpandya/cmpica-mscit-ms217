@@ -19,21 +19,21 @@ Progrmas:
 
 10)	Determine whether given year is leap year or not
 11)	An electric power distribution company charges its domestic consumers as follows:
-Consumption Units	Rate of Charge
-1-100	Rs. 0.75 per unit
-101-300	Rs. 75 plus Rs. 1.00 per unit excess of 100
-301-500	Rs. 275 plus Rs. 1.50 per unit excess of 300
-500 and above	Rs. 575 plus Rs. 1.75 per unit excess of 500
-
-Write a program that store customer number & power consumed in separate variables and print the amount to be paid by the customer. Note that output should be well formatted.
-12	Write a program to find out all the numbers divisible by 5 and 7 between 1 to 100.
-13	Write a program to find largest digit from the given number.
-14	Write a program to print multiplication table from 1X1 to 10X10.
-15	Find maximum and minimum from given array and its position
-16	Display array in ascending order.
-17	Create two single dimensional array and merge them into a single array in ascending order.
-18	Display the sum of the elements in the array.
-19	Find out the difference between maximum and minimum elements of the array.
-20	Calculate the total number of zeros, positive and negative elements in an array.
-21	Find out the average of n elements.
-22	Find out the total number of even elements in the array. Find out the total number of odd elements in the array.
+    Consumption Units	Rate of Charge
+    1-100	Rs. 0.75 per unit
+    101-300	Rs. 75 plus Rs. 1.00 per unit excess of 100
+    301-500	Rs. 275 plus Rs. 1.50 per unit excess of 300
+    500 and above	Rs. 575 plus Rs. 1.75 per unit excess of 500
+    Write a program that store customer number & power consumed in separate variables and print the amount to be paid by the customer. Note that output should be well formatted.
+    
+12)	Write a program to find out all the numbers divisible by 5 and 7 between 1 to 100.
+13)	Write a program to find largest digit from the given number.
+14)	Write a program to print multiplication table from 1X1 to 10X10.
+15)	Find maximum and minimum from given array and its position
+16)	Display array in ascending order.
+17)	Create two single dimensional array and merge them into a single array in ascending order.
+18)	Display the sum of the elements in the array.
+19)	Find out the difference between maximum and minimum elements of the array.
+20)	Calculate the total number of zeros, positive and negative elements in an array.
+21)	Find out the average of n elements.
+22)	Find out the total number of even elements in the array. Find out the total number of odd elements in the array.

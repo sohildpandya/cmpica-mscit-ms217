@@ -1,0 +1,22 @@
+1) Differentiate between Open Source Software and Closed Source Software
+2) Explain the advantages and disadvantages of the OSS.                                                
+3) List the wildly used Open Source products (minimum 15).
+4) What is XAMPP? Explain the installation steps of XAMPP. 
+5) How to write and execute PHP script? Explain with example.
+6) What is PHP? List out pros and cons of running PHP as a server side script.
+7) Why PHP is said to be loosely typed language? Also, explain the datatypes available in PHP.
+8) Explain various control statements in PHP with suitable example.
+9) How to use while, do..while, for and foreach loop in PHP?
+10) What is an array? How many types of array supported by PHP.
+11) How to define variable in PHP? Also, list the rules for PHP variables.
+12) How to define constant in PHP?
+13) How to declare a user defined function in PHP? Explain with suitable example. 
+14) Explain the functions to sorting an array with suitable examples. (Minimum 6 functions)
+15) Explain the various array functions with suitable examples.
+16) Explain the string function for following with suitable examples.
+  - Replacing characters within string
+  - Searching Strings
+  - Number of occurrences in string
+  - Searching for a Set of Characters
+  - Replacing All Occurrences
+  - Replacing a Portion of a String
